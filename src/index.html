@@ -4,9 +4,95 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>webpack starterkit</title>
+   <meta http-equiv="X-UA-Compatible" content="Chrome">
 </head>
 <body>
-  <h1>webpack starter</h1>
-  <p>✨ A lightweight foundation for your next webpack based frontend project.</p>
+  <nav class="navbar  navbar-dark bg-dark navbar-collapse-lg navbar-expand-sm " >
+    
+  <a class="navbar-brand" href="#">
+    <img src="https://png.pngtree.com/png-clipart/20190123/ourmid/pngtree-smile-restaurant-waiter-q-version-avatar-png-image_537289.jpg" width="30" height="30" class="d-inline-block align-top"  alt="">
+   NAIJA RESTAURANT    
+  </a>
+    <button class="navbar-toggler" type="button" 
+    data-toggle="collapse" data-target="#navbarText"
+     aria-controls="navbarTogglerDemo01" aria-expanded="false"
+      aria-label="Toggle navigation" >
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Cuisine</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Cuisine Types
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Lagos</a>
+          <a class="dropdown-item" href="#">Kano</a>
+          <a class="dropdown-item" href="#">Imo</a>
+          <a class="dropdown-item" href="Jos"></a>
+        </div>
+      </li>
+    </ul>
+    <span class="navbar-text">
+      
+    </span>
+  </div>
+</nav>
+<main class="container">
+    <div class="row" style="margin-top: 100px;">
+      <div class="col-4 " id="wrapper" style="margin-top: 70px;" >
+          <form id ="submittedform" >
+            <div><input type="text" hidden id="hidden"></div>
+  <div class="form-group">
+    <label for="name1" style="font-weight: 900;" id="name">Name</label>
+    <input type="text" class="Name" name="name" placeholder="name"  id="name2" required>
+    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+  </div>
+  
+  <div class="form-group">
+    <label for="RestaurantsLocation" style="font-weight:900;">Location
+      <label>
+    <select class="location" name="RestaurantsLocation" id="RestaurantsLocation">
+      <option></option>
+      <option value="Kano">Kano</option>
+      <option value="Imo">Imo</option>
+      <option value="Jos">Jos</option>
+      <option value="Lagos">Lagos</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="cuisineType"style="font-weight: 900;" >Cuisine Type</label>
+    <select class="cuisineType" name="cuisineType" id="cuisineType">
+      <option></option>
+      <option value="Lagos">lagos</option>
+      <option value="Kano">kano</option>
+      <option value="Ilorin">ilorin</option>
+      <option value="Ibadan">ibadan</option>
+    </select>
+  </div>
+  
+  <button type="submit" class="btn btn-primary" >Submit</button>
+</form>
+      </div>
+       <div class="col-8">
+          <table class="table table-striped " id="table-head"></table>
+       </div>
+    </div>
+</main>
+
+ 
+ 
+  <script src="./bundle.js"></script>
+  <!-- <h1>webpack starter</h1>
+  <p>✨ A lightweight foundation for your next webpack based frontend project.</p> -->
 </body>
 </html>

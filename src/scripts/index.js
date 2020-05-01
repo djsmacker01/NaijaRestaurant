@@ -269,7 +269,7 @@ submitInput.addEventListener('submit', (e) => {
   // create a delete button and insert a row to the table
   function deleteButton(element, row) {
     let cellD = row.insertCell();
-    let button = createNewButton('DELETE', 'info', 'deleteRow', element.id);
+    let button = createNewButton('DELETE', 'danger', 'deleteRow', element.id);
 
     cellD.appendChild(button);
   } // end of function
